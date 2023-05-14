@@ -12,6 +12,7 @@ defmodule EngineTester.CLI.Main do
   def start(_type, _args) do
 
     IO.puts("Hello, world!!")
+    EngineTester.CLI.RunExternalProcess.do_it()
 
     # 本来は、スーパーバイザーのPIDを返却する
     {:ok, self()}
